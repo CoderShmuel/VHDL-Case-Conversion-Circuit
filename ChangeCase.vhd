@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 
 entity ChangeCase is
-port (
-		Cin		:in 		std_logic_vector(7 downto 0);
-		Result	:out  	std_logic_vector(7 downto 0)
-);
+	port (
+			Cin		:in 		std_logic_vector(7 downto 0);
+			Result	:out  	std_logic_vector(7 downto 0)
+	);
 		
 attribute dont_touch	: string;
 attribute dont_touch of ChangeCase : entity is "true";
