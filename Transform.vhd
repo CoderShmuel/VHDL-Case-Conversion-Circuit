@@ -3,14 +3,14 @@ use IEEE.STD_LOGIC_1164.all;
 
 entity Transform is
 
-port(
-		Lcmd		:in 	std_logic;
-		Ucmd		:in 	std_logic;
-		Ncmd		:in 	std_logic;
-		Ccmd		:in 	std_logic;
-		Cin		:in 	std_logic_vector (7 downto 0);
-		Result	:out 	std_logic_vector (7 downto 0)
-);
+	port(
+			Lcmd		:in 	std_logic;
+			Ucmd		:in 	std_logic;
+			Ncmd		:in 	std_logic;
+			Ccmd		:in 	std_logic;
+			Cin		:in 	std_logic_vector (7 downto 0);
+			Result	:out 	std_logic_vector (7 downto 0)
+	);
 
 attribute dont_touch : string;
 attribute dont_touch of Transform : entity is "true";
